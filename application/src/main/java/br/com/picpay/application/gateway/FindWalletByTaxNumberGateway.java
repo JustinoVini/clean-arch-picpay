@@ -2,8 +2,8 @@ package br.com.picpay.application.gateway;
 
 import br.com.picpay.application.core.domain.Wallet;
 
-public interface CreateWalletGateway {
+public interface FindWalletByTaxNumberGateway {
 
-    void create(Wallet wallet);
+    Wallet findByTaxNumber(String taxNumber);
 
 }
