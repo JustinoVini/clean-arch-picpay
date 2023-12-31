@@ -6,6 +6,6 @@ import br.com.picpay.application.core.domain.Wallet;
 
 public interface CreateUserGateway {
 
-    Boolean create(User user, Wallet wallet, TransactionPin transactionPin);
+    Boolean create(User user, Wallet wallet);
 
 }
