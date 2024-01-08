@@ -1,6 +1,5 @@
-package br.com.picpay.application.entity;
+package br.com.picpay.application.infrastructure.entity;
 
-import br.com.picpay.application.core.domain.User;
 import br.com.picpay.application.core.domain.enums.UserTypeEnum;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -32,7 +31,7 @@ public class UserEntity {
     private String taxNumber;
 
     @Column(name = "Fullname", nullable = false)
-    private String fullname;
+    private String fulname;
 
     @Column(name = "Type", nullable = false)
     @Enumerated(EnumType.STRING)
@@ -41,7 +40,7 @@ public class UserEntity {
     @Column(name = "CreatedAt", nullable = false)
     private LocalDateTime createdAt;
 
-    @Column(name = "UpdatedAt", nullable = false)
+    @Column(name = "UpdatedAt")
     private LocalDateTime updatedAt;
 
 }

@@ -1,4 +1,4 @@
-package br.com.picpay.application.entity;
+package br.com.picpay.application.infrastructure.entity;
 
 import br.com.picpay.application.core.domain.enums.TransactionStatusEnum;
 import jakarta.persistence.*;
@@ -39,7 +39,7 @@ public class TransactionEntity {
     @Column(name = "CreatedAt", nullable = false)
     private LocalDateTime createdAt;
 
-    @Column(name = "UpdatedAt", nullable = false)
+    @Column(name = "UpdatedAt")
     private LocalDateTime updatedAt;
 
 }
